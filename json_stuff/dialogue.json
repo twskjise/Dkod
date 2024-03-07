@@ -1,0 +1,1356 @@
+[
+    "NOTE: progress() -> if type=dialogue, handleDialogue() elseif type=choice, handleChoice",
+
+    {
+        "ID": 0,
+        "Speaker": "them",
+        "SpeakerName": "... ",
+        "Type": "dialogue",
+        "Text": "Hello, welcome back to the first depth, whether you like it or not.",
+        "DepthChange": false,
+        "NextID": 1
+    },
+    {
+        "ID": 1,
+        "Type": "choice",
+        "Options":   [
+                        {
+                            "Class": "option",
+                            "Text": "Huh? Where am I?",
+                            "NextID": 2
+                        },
+                        {
+                            "Class": "option",
+                            "Text": "Hello.",
+                            "NextID": 3
+                        }
+                    ]
+    },
+    {
+        "ID": 2,
+        "Speaker": "us",
+        "SpeakerName": "You",
+        "Type": "dialogue",
+        "Text": "Huh? Where am I?",
+        "DepthChange": false,
+        "NextID": 4
+    },
+    {
+        "ID": 3,
+        "Speaker": "us",
+        "SpeakerName": "You",
+        "Type": "dialogue",
+        "Text": "Hello.",
+        "DepthChange": false,
+        "NextID": 5
+    },
+    {
+        "ID": 4,
+        "Speaker": "them",
+        "SpeakerName": "... ",
+        "Type": "dialogue",
+        "Text": "It seems that you are confused, but please stay calm and listen to what I am going to say.<br>You, sir, are in a dream. This computer is the manifestation of your subconsciousness.<br>If you wish to stay, please submit \"CANCEL\".<br>If you wish to go deeper, please submit \"DIVE\".<br>If you wish to wake up, please submit \"EJECT\".",
+        "DepthChange": false,
+        "NextID": 6
+    },
+    {
+        "ID": 5,
+        "Speaker": "them",
+        "SpeakerName": "... ",
+        "Type": "dialogue",
+        "Text": "It seems that you are not startled by the situation. Perhaps you have already been here. Then I will proceed without any further delay.<br>You, sir, are in a dream. This computer is the manifestation of your subconsciousness.<br>If you wish to stay, please submit \"CANCEL\".<br>If you wish to go deeper, please submit \"DIVE\".<br>If you wish to wake up, please submit \"EJECT\".",
+        "DepthChange": false,
+        "NextID": 6
+    },
+    {
+        "ID": 6,
+        "Type": "choice",
+        "Options":   [
+                        {
+                            "Class": "option",
+                            "Text": "DIVE",
+                            "NextID": 7
+                        },
+                        {
+                            "Class": "option",
+                            "Text": "CANCEL",
+                            "NextID": 8
+                        },
+                        {
+                            "Class": "option eject",
+                            "Text": "EJECT",
+                            "NextID": 9
+                        }
+                    ]
+    },
+    {
+        "ID": 7,
+        "Speaker": "us",
+        "SpeakerName": "You",
+        "Type": "dialogue",
+        "Text": "DIVE",
+        "DepthChange": false,
+        "NextID": 10
+    },
+    {
+        "ID": 8,
+        "Speaker": "us",
+        "SpeakerName": "You",
+        "Type": "dialogue",
+        "Text": "CANCEL",
+        "DepthChange": false,
+        "NextID": 11
+    },
+    {
+        "ID": 9,
+        "Speaker": "us",
+        "SpeakerName": "You",
+        "Type": "dialogue",
+        "Text": "INJECT",
+        "DepthChange": false,
+        "NextID": 12
+    },
+    {
+        "ID": 10,
+        "Speaker": "them",
+        "SpeakerName": "... ",
+        "Type": "dialogue",
+        "Text": "It seems you have chosen to dive deeper...",
+        "DepthChange": false,
+        "NextID": 13
+    },
+    {
+        "ID": 11,
+        "Speaker": "them",
+        "SpeakerName": "... ",
+        "Type": "dialogue",
+        "Text": "It seems you have chosen to stay inside the void. Please enjoy your stay here.",
+        "DepthChange": false,
+        "NextID": 0.2
+    },
+    {
+        "ID": 12,
+        "Speaker": "them",
+        "SpeakerName": "... ",
+        "Type": "dialogue",
+        "Text": "It seems you have chosen to wake up from this prison. Procedures will be done accordingly.",
+        "DepthChange": false,
+        "NextID": 0.1
+    },
+    {
+        "ID": 13,
+        "Speaker": "system",
+        "SpeakerName": "System",
+        "Type": "dialogue",
+        "Text": "--Personnel Data--<br>Name: Ethan Granick<br>Age: 34<br>Work Experience: Author of The Hallow Trunk one-shot<br>Works Published: 0<br><br>--Work Data--<br>Current Work: The Prison<br>Synopsis: A story written in the perspective of a man who was sent to an indefinite quarantine.<br>Status: Fourth draft",
+        "DepthChange": true,
+        "NextID": 14
+    },
+    {
+        "ID": 14,
+        "Speaker": "them",
+        "SpeakerName": "Horell Kysmith",
+        "Type": "dialogue",
+        "Text": "I don't think Granick understood his task.",
+        "DepthChange": false,
+        "NextID": 15
+    },
+    {
+        "ID": 15,
+        "Speaker": "them",
+        "SpeakerName": "Shals Evengard",
+        "Type": "dialogue",
+        "Text": "Yeah, me too. He keeps on sending a story everyone knows will flop.",
+        "DepthChange": false,
+        "NextID": 16
+    },
+    {
+        "ID": 16,
+        "Type": "choice",
+        "Options":   [
+                        {
+                            "Class": "option",
+                            "Text": "I don't think it'll flop though.",
+                            "NextID": 17
+                        },
+                        {
+                            "Class": "option",
+                            "Text": "It will flop?",
+                            "NextID": 18
+                        }
+                    ]
+    },
+    {
+        "ID": 17,
+        "Speaker": "us",
+        "SpeakerName": "Niel Veneford",
+        "Type": "dialogue",
+        "Text": "I don't think it'll flop though.",
+        "DepthChange": false,
+        "NextID": 19
+    },
+    {
+        "ID": 18,
+        "Speaker": "us",
+        "SpeakerName": "Niel Veneford",
+        "Type": "dialogue",
+        "Text": "It will flop?",
+        "DepthChange": false,
+        "NextID": 20
+    },
+    {
+        "ID": 19,
+        "Speaker": "them",
+        "SpeakerName": "Shals Evengard",
+        "Type": "dialogue",
+        "Text": "You don't? Oh right, you haven't seen his previous drafts yet.",
+        "DepthChange": false,
+        "NextID": 21
+    },
+    {
+        "ID": 20,
+        "Speaker": "them",
+        "SpeakerName": "Shals Evengard",
+        "Type": "dialogue",
+        "Text": "Yeah, you haven't seen any of his previous drafts, right? It's basically a bunch of junk. You don't have to make yourself suffer and read them.",
+        "DepthChange": false,
+        "NextID": 21
+    },
+    {
+        "ID": 21,
+        "Speaker": "them",
+        "SpeakerName": "Horell Kysmith",
+        "Type": "dialogue",
+        "Text": "Basically, the worldbuilding sucks. The character development is fast. And it's somehow too rushed while also being boring.",
+        "DepthChange": false,
+        "NextID": 22
+    },
+    {
+        "ID": 22,
+        "Speaker": "them",
+        "SpeakerName": "Shals Evengard",
+        "Type": "dialogue",
+        "Text": "Like, in the first chapter, the main character is put into quarantine, and immediately in the second chapter, the main character is already insane beyond repair. Don't you see how rushed it is? Like, what comes after this? The dude escape quarantine and goes on a murder spree? That shouldn't be the case because from what he said, this is going to be a short story focusing on the isolation part itself.",
+        "DepthChange": false,
+        "NextID": 23
+    },
+    {
+        "ID": 23,
+        "Type": "choice",
+        "Options":   [
+                        {
+                            "Class": "option",
+                            "Text": "What if we tell him to slow the pace down or change the focus of the story?",
+                            "NextID": 24
+                        },
+                        {
+                            "Class": "option",
+                            "Text": "Damn. Sounds bad. Is this his first work?",
+                            "NextID": 25
+                        }
+                    ]
+    },
+    {
+        "ID": 24,
+        "Speaker": "us",
+        "SpeakerName": "Niel Veneford",
+        "Type": "dialogue",
+        "Text": "What if we tell him to slow the pace down or change the focus of the story?",
+        "DepthChange": false,
+        "NextID": 26
+    },
+    {
+        "ID": 25,
+        "Speaker": "us",
+        "SpeakerName": "Niel Veneford",
+        "Type": "dialogue",
+        "Text": "Damn. Sounds bad. Is this his first work?",
+        "DepthChange": false,
+        "NextID": 27
+    },
+    {
+        "ID": 26,
+        "Speaker": "them",
+        "SpeakerName": "Horell Kysmith",
+        "Type": "dialogue",
+        "Text": "Haha! Do you think we haven't told him that? Every time he sent a new draft, we told him those exact thing, but do you know what he said? He said \"Just give me a chance. I promise this work will be successful.\"<br>Like hell this will be successful.",
+        "DepthChange": false,
+        "NextID": 28
+    },
+    {
+        "ID": 27,
+        "Speaker": "them",
+        "SpeakerName": "Horell Kysmith",
+        "Type": "dialogue",
+        "Text": "Yeah, it's his first, but man, look at Ashina. He started his first draft around the same time as Granick but his work is already in serialization. I heard the draft for the second volume is almost finish too. Meanwhile the other dude is still crawling around wasting our time.",
+        "DepthChange": false,
+        "NextID": 28
+    },
+    {
+        "ID": 28,
+        "Type": "choice",
+        "Options":   [
+                        {
+                            "Class": "option",
+                            "Text": "You guys sounds like assholes to be honest.",
+                            "NextID": 29
+                        },
+                        {
+                            "Class": "option",
+                            "Text": "Sounds like a tough one to work with.",
+                            "NextID": 30
+                        }
+                    ]
+    },
+    {
+        "ID": 29,
+        "Speaker": "us",
+        "SpeakerName": "Niel Veneford",
+        "Type": "dialogue",
+        "Text": "You guys sounds like assholes to be honest.",
+        "DepthChange": false,
+        "NextID": 31
+    },
+    {
+        "ID": 30,
+        "Speaker": "us",
+        "SpeakerName": "Niel Veneford",
+        "Type": "dialogue",
+        "Text": "Sounds like a tough one to work with.",
+        "DepthChange": false,
+        "NextID": 32
+    },
+    {
+        "ID": 31,
+        "Speaker": "them",
+        "SpeakerName": "Horell Kysmith",
+        "Type": "dialogue",
+        "Text": "We might sound like assholes but it's because his potential is all wasted!",
+        "DepthChange": false,
+        "NextID": 33
+    },
+    {
+        "ID": 32,
+        "Speaker": "them",
+        "SpeakerName": "Shals Evengard",
+        "Type": "dialogue",
+        "Text": "Yeah, although his one-shot was great, now he's just wasting everyone's time.",
+        "DepthChange": false,
+        "NextID": 34
+    },
+    {
+        "ID": 33,
+        "Speaker": "them",
+        "SpeakerName": "Shals Evengard",
+        "Type": "dialogue",
+        "Text": "Yeah! Do you know Granick's one-shot was pure gold? It is one of the best stories of the decade! But instead of continuing making good works, he wants to make something like this. Like, dude.",
+        "DepthChange": false,
+        "NextID": 35
+    },
+    {
+        "ID": 34,
+        "Speaker": "them",
+        "SpeakerName": "Horell Kysmith",
+        "Type": "dialogue",
+        "Text": "I wish he could've just stick with something to the one-shot. That one's great, unlike this one.",
+        "DepthChange": false,
+        "NextID": 36
+    },
+    {
+        "ID": 35,
+        "Speaker": "them",
+        "SpeakerName": "Horell Kysmith",
+        "Type": "dialogue",
+        "Text": "He said this is what he wants to do. Please let him do that. But man, he's not living up to what he promised at the start at all.",
+        "DepthChange": false,
+        "NextID": 36
+    },
+    {
+        "ID": 36,
+        "Speaker": "them",
+        "SpeakerName": "Shals Evengard",
+        "Type": "dialogue",
+        "Text": "Anyway. So, Niel, tomorrow is going to be your first meeting with Granick, right? What's your stance on this?",
+        "DepthChange": false,
+        "NextID": 37
+    },
+    {
+        "ID": 37,
+        "Type": "choice",
+        "Options":   [
+                        {
+                            "Class": "option",
+                            "Text": "He should change parts of his work.",
+                            "NextID": 38
+                        },
+                        {
+                            "Class": "option",
+                            "Text": "He should stick to the current story without changing anything.",
+                            "NextID": 39
+                        },
+                        {
+                            "Class": "option",
+                            "Text": "He should stop and do something else.",
+                            "NextID": 40
+                        }
+                    ]
+    },
+    {
+        "ID": 38,
+        "Speaker": "us",
+        "SpeakerName": "Niel Veneford",
+        "Type": "dialogue",
+        "Text": "He should make changes to his work. Otherwise right now, he's kinda worthless.",
+        "DepthChange": false,
+        "NextID": 0.3
+    },
+    {
+        "ID": 39,
+        "Speaker": "us",
+        "SpeakerName": "Niel Veneford",
+        "Type": "dialogue",
+        "Text": "He should just stick with this. Do what he wants. If we don't like him, just fire him. Ain't our problem.",
+        "DepthChange": false,
+        "NextID": 41
+    },
+    {
+        "ID": 40,
+        "Speaker": "us",
+        "SpeakerName": "Niel Veneford",
+        "Type": "dialogue",
+        "Text": "He should do something else. The one-shot sounds like a fluke rather than his actual skill. Otherwise he wouldn't be having problem with his draft.",
+        "DepthChange": false,
+        "NextID": 0.4
+    },
+    {
+        "ID": 41,
+        "Speaker": "them",
+        "SpeakerName": "Clair",
+        "Type": "dialogue",
+        "Text": "Hey Emy! Congrats on that film you directed! It reached top three of the studio's highest-grossing movies in just 2 weeks!",
+        "DepthChange": true,
+        "NextID": 42
+    },
+    {
+        "ID": 42,
+        "Type": "choice",
+        "Options":   [
+                        {
+                            "Class": "option",
+                            "Text": "Thank you!",
+                            "NextID": 43
+                        },
+                        {
+                            "Class": "option",
+                            "Text": "Yeah, thanks.",
+                            "NextID": 44
+                        }
+                    ]
+    },
+    {
+        "ID": 43,
+        "Speaker": "us",
+        "SpeakerName": "Emy",
+        "Type": "dialogue",
+        "Text": "Thank you!",
+        "DepthChange": false,
+        "NextID": 45
+    },
+    {
+        "ID": 44,
+        "Speaker": "us",
+        "SpeakerName": "Emy",
+        "Type": "dialogue",
+        "Text": "Yeah, thanks!",
+        "DepthChange": false,
+        "NextID": 45
+    },
+    {
+        "ID": 45,
+        "Speaker": "them",
+        "SpeakerName": "Clair",
+        "Type": "dialogue",
+        "Text": "How did it feel? You did became one of the most successful directors of the studio after all.",
+        "DepthChange": false,
+        "NextID": 47
+    },
+    {
+        "ID": 47,
+        "Type": "choice",
+        "Options":   [
+                        {
+                            "Class": "option",
+                            "Text": "It felt great!",
+                            "NextID": 48
+                        },
+                        {
+                            "Class": "option",
+                            "Text": "It gave me motivation to do even better!",
+                            "NextID": 49
+                        },
+                        {
+                            "Class": "thought",
+                            "Text": "I didn't even want to make it...",
+                            "NextID": 100000000
+                        }
+                    ]
+    },
+    {
+        "ID": 48,
+        "Speaker": "us",
+        "SpeakerName": "Emy",
+        "Type": "dialogue",
+        "Text": "It felt great!",
+        "DepthChange": false,
+        "NextID": 50
+    },
+    {
+        "ID": 49,
+        "Speaker": "us",
+        "SpeakerName": "Emy",
+        "Type": "dialogue",
+        "Text": "It gave me motivation to do even better!",
+        "DepthChange": false,
+        "NextID": 50
+    },
+    {
+        "ID": 50,
+        "Speaker": "them",
+        "SpeakerName": "Clair",
+        "Type": "dialogue",
+        "Text": "That's great! So what's your next plan?",
+        "DepthChange": false,
+        "NextID": 51
+    },
+    {
+        "ID": 51,
+        "Type": "choice",
+        "Options":  [
+                        {
+                            "Class": "option",
+                            "Text": "Probably something in the same genre. It's what I'm best at after all.",
+                            "NextID": 52
+                        },
+                        {
+                            "Class": "option",
+                            "Text": "Maybe a sequel. I still got lots of stories I want to tell in that world.",
+                            "NextID": 53
+                        },
+                        {
+                            "Class": "thought",
+                            "Text": "I want to do something I want.",
+                            "NextID": 100000000
+                        }
+                    ]
+    },
+    {
+        "ID": 52,
+        "Speaker": "us",
+        "SpeakerName": "Emy",
+        "Type": "dialogue",
+        "Text": "Probably something in the same genre. It's what I'm best at after all.",
+        "DepthChange": false,
+        "NextID": 54
+    },
+    {
+        "ID": 53,
+        "Speaker": "us",
+        "SpeakerName": "Emy",
+        "Type": "dialogue",
+        "Text": "Maybe a sequel. I still got lots of stories I want to tell in that world.",
+        "DepthChange": false,
+        "NextID": 54
+    },
+    {
+        "ID": 54,
+        "Speaker": "them",
+        "SpeakerName": "Clair",
+        "Type": "dialogue",
+        "Text": "Ah, okay. Understandable. I'd love to see your next work! So what is it going to be about?",
+        "DepthChange": false,
+        "NextID": 55
+    },
+    {
+        "ID": 55,
+        "Type": "choice",
+        "Options":  [
+                        {
+                            "Class": "option",
+                            "Text": "A couple being separated and joining back again.",
+                            "NextID": 56
+                        },
+                        {
+                            "Class": "option",
+                            "Text": "Love told through the parent's perspective.",
+                            "NextID": 57
+                        },
+                        {
+                            "Class": "thought",
+                            "Text": "I never wanted to do romance. I want to do horror.",
+                            "NextID": 100000000
+                        }
+                    ]
+    },
+    {
+        "ID": 56,
+        "Speaker": "us",
+        "SpeakerName": "Emy",
+        "Type": "dialogue",
+        "Text": "Well, this one is about love of two people with extreme social standing, right? I think the next one is going to be about a couple being separated and their journey to get together again.",
+        "DepthChange": false,
+        "NextID": 58
+    },
+    {
+        "ID": 57,
+        "Speaker": "us",
+        "SpeakerName": "Emy",
+        "Type": "dialogue",
+        "Text": "Well, this one is really focused on the couple, right? So I think the next one is going to be in the perspective of the adults. Maybe about parents who are trying to help or hinder their kid's love life.",
+        "DepthChange": false,
+        "NextID": 58
+    },
+    {
+        "ID": 58,
+        "Speaker": "them",
+        "SpeakerName": "Clair",
+        "Type": "dialogue",
+        "Text": "Oooooooo, sounds nice. Are you sure you can do it? It is following that movie after all. That's a high bar to pass.",
+        "DepthChange": false,
+        "NextID": 59
+    },
+    {
+        "ID": 59,
+        "Type": "choice",
+        "Options":  [
+                        {
+                            "Class": "option",
+                            "Text": "Of course I can do it!",
+                            "NextID": 60
+                        },
+                        {
+                            "Class": "option",
+                            "Text": "It will be hard but I will try my best!",
+                            "NextID": 61
+                        },
+                        {
+                            "Class": "thought",
+                            "Text": "No. How did this lifeless piece of junk get popular anyway.",
+                            "NextID": 100000000
+                        }
+                    ]
+    },
+    {
+        "ID": 60,
+        "Speaker": "us",
+        "SpeakerName": "Emy",
+        "Type": "dialogue",
+        "Text": "Of course I can do it!",
+        "DepthChange": false,
+        "NextID": 62
+    },
+    {
+        "ID": 61,
+        "Speaker": "us",
+        "SpeakerName": "Emy",
+        "Type": "dialogue",
+        "Text": "It will be hard but I will try my best!",
+        "DepthChange": false,
+        "NextID": 62
+    },
+    {
+        "ID": 62,
+        "Speaker": "them",
+        "SpeakerName": "Clair",
+        "Type": "dialogue",
+        "Text": "That's great to hear! But if it seems too hard you can always use help. There's always that option",
+        "DepthChange": false,
+        "NextID": 63
+    },
+    {
+        "ID": 63,
+        "Type": "choice",
+        "Options":  [
+                        {
+                            "Class": "option",
+                            "Text": "Thanks! But I will try my best first!",
+                            "NextID": 64
+                        },
+                        {
+                            "Class": "option",
+                            "Text": "Pft. Who needs help? I can do it!",
+                            "NextID": 65
+                        },
+                        {
+                            "Class": "thought",
+                            "Text": "Help me please. Help. Help. Help.",
+                            "NextID": 100000000
+                        }
+                    ]
+    },
+    {
+        "ID": 64,
+        "Speaker": "us",
+        "SpeakerName": "Emy",
+        "Type": "dialogue",
+        "Text": "Thanks! But I will try my best first!",
+        "DepthChange": false,
+        "NextID": 66
+    },
+    {
+        "ID": 65,
+        "Speaker": "us",
+        "SpeakerName": "Emy",
+        "Type": "dialogue",
+        "Text": "Pft. Who needs help? I can do it!",
+        "DepthChange": false,
+        "NextID": 66
+    },
+    {
+        "ID": 66,
+        "Speaker": "them",
+        "SpeakerName": "Clair",
+        "Type": "dialogue",
+        "Text": "That's some great confidence right there, got to love it! So are you sure about this?",
+        "DepthChange": false,
+        "NextID": 67
+    },
+    {
+        "ID": 67,
+        "Type": "choice",
+        "Options":   [
+                        {
+                            "Class": "option",
+                            "Text": "YES!",
+                            "NextID": 68
+                        },
+                        {
+                            "Class": "option",
+                            "Text": "YES!",
+                            "NextID": 68
+                        },
+                        {
+                            "Class": "thought",
+                            "Text": "NONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONO",
+                            "NextID": 70
+                        }
+                    ]
+    },
+    {
+        "ID": 68,
+        "Speaker": "us",
+        "SpeakerName": "Emy",
+        "Type": "dialogue",
+        "Text": "YES!",
+        "DepthChange": false,
+        "NextID": 0.5
+    },
+    {
+        "ID": 69,
+        "Speaker": "us",
+        "SpeakerName": "Emy",
+        "Type": "dialogue",
+        "Text": "NONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONONO",
+        "DepthChange": false,
+        "NextID": 70
+    },
+    {
+        "ID": 70,
+        "Speaker": "us",
+        "SpeakerName": "John",
+        "Type": "dialogue",
+        "Text": "It's scary, Mat.",
+        "DepthChange": true,
+        "NextID": 71
+    },
+    {
+        "ID": 71,
+        "Speaker": "them",
+        "SpeakerName": "Mat",
+        "Type": "dialogue",
+        "Text": "I know, that's why we're here in the shelter.",
+        "DepthChange": false,
+        "NextID": 72
+    },
+    {
+        "ID": 72,
+        "Speaker": "us",
+        "SpeakerName": "John",
+        "Type": "dialogue",
+        "Text": "But what if they got into the shelter? What are we going to do?",
+        "DepthChange": false,
+        "NextID": 73
+    },
+    {
+        "ID": 73,
+        "Speaker": "them",
+        "SpeakerName": "Mat",
+        "Type": "dialogue",
+        "Text": "They're not. They can't get in here.",
+        "DepthChange": false,
+        "NextID": 74
+    },
+    {
+        "ID": 74,
+        "Speaker": "us",
+        "SpeakerName": "John",
+        "Type": "dialogue",
+        "Text": "How can you be so sure of that, Mat. I'm not trying to pick a fight here. It's just. You never know what they will do. What if they came in even bigger groups then before?",
+        "DepthChange": false,
+        "NextID": 75
+    },
+    {
+        "ID": 75,
+        "Speaker": "them",
+        "SpeakerName": "Mat",
+        "Type": "dialogue",
+        "Text": "Trust me, It's going to be fine.",
+        "DepthChange": false,
+        "NextID": 75.5
+    },
+    {
+        "ID": 75.5,
+        "Speaker": "system",
+        "SpeakerName": "ALERT: Shelter VZ-009 was attacked.",
+        "Type": "dialogue",
+        "Text": "Nearby shelter prepare for an attack.",
+        "DepthChange": false,
+        "NextID": 76
+    },
+    {
+        "ID": 76,
+        "Speaker": "us",
+        "SpeakerName": "John",
+        "Type": "dialogue",
+        "Text": "Mat!",
+        "DepthChange": false,
+        "NextID": 77
+    },
+    {
+        "ID": 77,
+        "Speaker": "them",
+        "SpeakerName": "Mat",
+        "Type": "dialogue",
+        "Text": "It's fine, it's fine. We're not that close to VZ-009, you remember?",
+        "DepthChange": false,
+        "NextID": 78
+    },
+    {
+        "ID": 78,
+        "Type": "choice",
+        "Options":   [
+                        {
+                            "Class": "option",
+                            "Text": "What if we just, go outside and accept our fate?",
+                            "NextID": 80
+                        },
+                        {
+                            "Class": "option",
+                            "Text": "Can we barricade ourselves more?",
+                            "NextID": 79
+                        }
+                    ]
+    },
+    {
+        "ID": 79,
+        "Speaker": "us",
+        "SpeakerName": "John",
+        "Type": "dialogue",
+        "Text": "Can we barricade ourselves more?",
+        "DepthChange": false,
+        "NextID": 81
+    },
+    {
+        "ID": 80,
+        "Speaker": "us",
+        "SpeakerName": "John",
+        "Type": "dialogue",
+        "Text": "What if we just, go outside and accept our fate?",
+        "DepthChange": false,
+        "NextID": 82
+    },
+    {
+        "ID": 81,
+        "Speaker": "them",
+        "SpeakerName": "Mat",
+        "Type": "dialogue",
+        "Text": "Yeah, good idea. Grab some materials from the storage room. I'll handle the construction.",
+        "DepthChange": false,
+        "NextID": 83
+    },
+    {
+        "ID": 82,
+        "Speaker": "them",
+        "SpeakerName": "Mat",
+        "Type": "dialogue",
+        "Text": "Are you stupid!? You'll die out there! It's safe to be in here!",
+        "DepthChange": false,
+        "NextID": 84
+    },
+    {
+        "ID": 83,
+        "Speaker": "us",
+        "SpeakerName": "John",
+        "Type": "dialogue",
+        "Text": "Alright.",
+        "DepthChange": false,
+        "NextID": 0.6
+    },
+    {
+        "ID": 84,
+        "Speaker": "us",
+        "SpeakerName": "John",
+        "Type": "dialogue",
+        "Text": "Yeah, I'm sorry.",
+        "DepthChange": false,
+        "NextID": 85
+    },
+    {
+        "ID": 85,
+        "Speaker": "them",
+        "SpeakerName": "Mat",
+        "Type": "dialogue",
+        "Text": "But you know. There's always those pills that Thomas gave us, saying that it will help if we were to be in big trouble. Maybe it's time to take it now. It's probably a strengthening pill from what I see.",
+        "DepthChange": false,
+        "NextID": 86
+    },
+    {
+        "ID": 86,
+        "Type": "choice",
+        "Options":   [
+                        {
+                            "Class": "option",
+                            "Text": "Take pill",
+                            "NextID": 0.1
+                        },
+                        {
+                            "Class": "option",
+                            "Text": "Don't take pill",
+                            "NextID": 87
+                        }
+                    ]
+    },
+    {
+        "ID": 87,
+        "Speaker": "us",
+        "SpeakerName": "John",
+        "Type": "dialogue",
+        "Text": "No, I think it's not the time yet.",
+        "DepthChange": false,
+        "NextID": 88
+    },
+    {
+        "ID": 88,
+        "Speaker": "them",
+        "SpeakerName": "Mat",
+        "Type": "dialogue",
+        "Text": "Alright. If you say so.",
+        "DepthChange": false,
+        "NextID": 89
+    },
+    {
+        "ID": 89,
+        "Speaker": "system",
+        "SpeakerName": "ALERT: Presence detected nearby",
+        "Type": "dialogue",
+        "Text": "Movement towards VZ-003",
+        "DepthChange": false,
+        "NextID": 90
+    },
+    {
+        "ID": 90,
+        "Speaker": "us",
+        "SpeakerName": "John",
+        "Type": "dialogue",
+        "Text": "Isn't that here!?",
+        "DepthChange": false,
+        "NextID": 91
+    },
+    {
+        "ID": 91,
+        "Speaker": "them",
+        "SpeakerName": "Mat",
+        "Type": "dialogue",
+        "Text": "Go grab your weapon! We need to get prepared before they get here!",
+        "DepthChange": false,
+        "NextID": 92
+    },
+    {
+        "ID": 92,
+        "Speaker": "us",
+        "SpeakerName": "John",
+        "Type": "dialogue",
+        "Text": "Alright. I'll be back in a bit.",
+        "DepthChange": false,
+        "NextID": 93
+    },
+    {
+        "ID": 93,
+        "Speaker": "system",
+        "SpeakerName": "ALERT: Presence detected nearby",
+        "Type": "dialogue",
+        "Text": "Multiple presences detected near VZ-003 vicinity. VZ-003 residences prepare for encounter.",
+        "DepthChange": false,
+        "NextID": 94
+    },
+    {
+        "ID": 94,
+        "Speaker": "them",
+        "SpeakerName": "Mat",
+        "Type": "dialogue",
+        "Text": "It's getting closer. Stay quiet. They might not have heard us yet. We can stay hidden if that's the case.",
+        "DepthChange": false,
+        "NextID": 95
+    },
+    {
+        "ID": 95,
+        "Speaker": "us",
+        "SpeakerName": "John",
+        "Type": "dialogue",
+        "Text": "Alright.",
+        "DepthChange": false,
+        "NextID": 96
+    },
+    {
+        "ID": 96,
+        "Speaker": "us",
+        "SpeakerName": "John",
+        "Type": "dialogue",
+        "Text": "Crap! It's here!",
+        "DepthChange": false,
+        "NextID": 97
+    },
+    {
+        "ID": 97,
+        "Speaker": "them",
+        "SpeakerName": "Mat",
+        "Type": "dialogue",
+        "Text": "Maybe it will just go away if the barricades are strong enough and it can't break them.",
+        "DepthChange": false,
+        "NextID": 98
+    },
+    {
+        "ID": 98,
+        "Speaker": "us",
+        "SpeakerName": "John",
+        "Type": "dialogue",
+        "Text": "It broke the barricades!",
+        "DepthChange": false,
+        "NextID": 99
+    },
+    {
+        "ID": 99,
+        "Speaker": "them",
+        "SpeakerName": "Mat",
+        "Type": "dialogue",
+        "Text": "Shoot it, John! Before it break the last layer!",
+        "DepthChange": false,
+        "NextID": 100
+    },
+    {
+        "ID": 100,
+        "Speaker": "us",
+        "SpeakerName": "John",
+        "Type": "dialogue",
+        "Text": "I did! It's not shooting! It's jammed!",
+        "DepthChange": false,
+        "NextID": 101
+    },
+    {
+        "ID": 101,
+        "Speaker": "them",
+        "SpeakerName": "Mat",
+        "Type": "dialogue",
+        "Text": "Crap! Use the pills! Use it!",
+        "DepthChange": false,
+        "NextID": 102
+    },
+    {
+        "ID": 102,
+        "Type": "choice",
+        "Options":   [
+                        {
+                            "Class": "option",
+                            "Text": "Take pill",
+                            "NextID": 0.1
+                        },
+                        {
+                            "Class": "option",
+                            "Text": "Don't take pill",
+                            "NextID": 103
+                        }
+                    ]
+    },
+    {
+        "ID": 103,
+        "Speaker": "us",
+        "SpeakerName": "John",
+        "Type": "dialogue",
+        "Text": "No I... I can't...",
+        "DepthChange": false,
+        "NextID": 104
+    },
+    {
+        "ID": 104,
+        "Speaker": "them",
+        "SpeakerName": "Mat",
+        "Type": "dialogue",
+        "Text": "Just use it! I know it's uncertain what it's going to do but Thomas told you to take it if you are ever in trouble, right?!",
+        "DepthChange": false,
+        "NextID": 105
+    },
+    {
+        "ID": 105,
+        "Type": "choice",
+        "Options":   [
+                        {
+                            "Class": "option bigger",
+                            "Text": "Take pill",
+                            "NextID": 0.1
+                        },
+                        {
+                            "Class": "option",
+                            "Text": "Don't take pill",
+                            "NextID": 106
+                        }
+                    ]
+    },
+    {
+        "ID": 106,
+        "Speaker": "us",
+        "SpeakerName": "John",
+        "Type": "dialogue",
+        "Text": "I... I'm sorry, I just can't...",
+        "DepthChange": false,
+        "NextID": 107
+    },
+    {
+        "ID": 107,
+        "Speaker": "them",
+        "SpeakerName": "Mat",
+        "Type": "dialogue",
+        "Text": "No, it's fine. I understand. It's hard to try the unknown. Thomas just gave you the pills without explaining much and went missing afterwards after all.<br>Run away. That's the best thing to do right now. Go to VZ-005. It's the closest shelter from here. They also got more people than here so it'll be easier fighting it.",
+        "DepthChange": false,
+        "NextID": 108
+    },
+    {
+        "ID": 108,
+        "Speaker": "us",
+        "SpeakerName": "John",
+        "Type": "dialogue",
+        "Text": "But what about you?",
+        "DepthChange": false,
+        "NextID": 109
+    },
+    {
+        "ID": 109,
+        "Speaker": "them",
+        "SpeakerName": "Mat",
+        "Type": "dialogue",
+        "Text": "I don't care about myself. One of my leg is chopped off, my eyes are also barely functioning. I don't really have much time left to live anyway. But you're still young.",
+        "DepthChange": false,
+        "NextID": 110
+    },
+    {
+        "ID": 110,
+        "Speaker": "us",
+        "SpeakerName": "John",
+        "Type": "dialogue",
+        "Text": "No! I can't just leave you!",
+        "DepthChange": false,
+        "NextID": 111
+    },
+    {
+        "ID": 111,
+        "Speaker": "them",
+        "SpeakerName": "Mat",
+        "Type": "dialogue",
+        "Text": "JOHN!",
+        "DepthChange": false,
+        "NextID": 112
+    },
+    {
+        "ID": 112,
+        "Speaker": "them",
+        "SpeakerName": "Mat",
+        "Type": "dialogue",
+        "Text": "Just go. Think of it as granting this old man his last wish.",
+        "DepthChange": false,
+        "NextID": 113
+    },
+    {
+        "ID": 113,
+        "Speaker": "us",
+        "SpeakerName": "John",
+        "Type": "dialogue",
+        "Text": "But...",
+        "DepthChange": false,
+        "NextID": 114
+    },
+    {
+        "ID": 114,
+        "Type": "choice",
+        "Options":   [
+                        {
+                            "Class": "option",
+                            "Text": "Stay",
+                            "NextID": 116
+                        },
+                        {
+                            "Class": "option",
+                            "Text": "Run away",
+                            "NextID": 115
+                        }
+                    ]
+    },
+    {
+        "ID": 115,
+        "Speaker": "us",
+        "SpeakerName": "John",
+        "Type": "dialogue",
+        "Text": "Alright Mat. I better see you in heaven.",
+        "DepthChange": false,
+        "NextID": 117
+    },
+    {
+        "ID": 116,
+        "Speaker": "us",
+        "SpeakerName": "John",
+        "Type": "dialogue",
+        "Text": "No, I'll stay with you.",
+        "DepthChange": false,
+        "NextID": 118
+    },
+    {
+        "ID": 117,
+        "Speaker": "them",
+        "SpeakerName": "Mat",
+        "Type": "dialogue",
+        "Text": "Ha! I doubt it. We'd be more likely to find each other in hell.",
+        "DepthChange": false,
+        "NextID": 119
+    },
+    {
+        "ID": 118,
+        "Speaker": "them",
+        "SpeakerName": "Mat",
+        "Type": "dialogue",
+        "Text": "What! John! No! Run away! You shouldn't throw away your life here!",
+        "DepthChange": false,
+        "NextID": 120
+    },
+    {
+        "ID": 119,
+        "Speaker": "us",
+        "SpeakerName": "John",
+        "Type": "dialogue",
+        "Text": "Haha. Then see you later in hell, Mat.",
+        "DepthChange": false,
+        "NextID": 121
+    },
+    {
+        "ID": 120,
+        "Speaker": "us",
+        "SpeakerName": "John",
+        "Type": "dialogue",
+        "Text": "If we're going to die, we're going to die together, Mat. It's either all in or nothing.",
+        "DepthChange": false,
+        "NextID": 122
+    },
+    {
+        "ID": 121,
+        "Speaker": "them",
+        "SpeakerName": "Mat",
+        "Type": "dialogue",
+        "Text": "See ya!",
+        "DepthChange": false,
+        "NextID": 0.7
+    },
+    {
+        "ID": 122,
+        "Type": "choice",
+        "Options":   [
+                        {
+                            "Class": "option",
+                            "Text": "Grab metal pipe and fight",
+                            "NextID": 0.8
+                        },
+                        {
+                            "Class": "option",
+                            "Text": "Go outside",
+                            "NextID": 123
+                        }
+                    ]
+    },
+    {
+        "ID": 123,
+        "Speaker": "them",
+        "SpeakerName": "Mat",
+        "Type": "dialogue",
+        "Text": "John! Stop!!",
+        "DepthChange": false,
+        "NextID": 124
+    },
+    {
+        "ID": 124,
+        "Speaker": "us",
+        "SpeakerName": "John",
+        "Type": "dialogue",
+        "Text": "Hey Mat...",
+        "DepthChange": false,
+        "NextID": 125
+    },
+    {
+        "ID": 125,
+        "Speaker": "us",
+        "SpeakerName": "John",
+        "Type": "dialogue",
+        "Text": "I don't think it's that bad... This ending...",
+        "DepthChange": false,
+        "NextID": 0.9
+    },
+    {
+        "ID": 0.1,
+        "Type": "ending",
+        "Text": "You won!<br>You have woken up.<br>But the easiest option may not translate to the best results.<br>It may help you escape today, but not tomorrow."
+    },
+    {
+        "ID": 0.2,
+        "Type": "ending",
+        "Text": "You have chosen to stay in the empty void.<br>It is the place where you will be inside the most after all.<br>But staying here does not fix anything.<br>It only amplifies the effects."
+    },
+    {
+        "ID": 0.3,
+        "Type": "ending",
+        "Text": "If that's what you really feel like..."
+    },
+    {
+        "ID": 0.4,
+        "Type": "ending",
+        "Text": "I really don't know what to say."
+    },
+    {
+        "ID": 0.5,
+        "Type": "ending",
+        "Text": "Expectation is a drug.<br>It can make something seems better than it actually is, but in the end, it is just another poison."
+    },
+    {
+        "ID": 0.6,
+        "Type": "ending",
+        "Text": "It is not a surprise that being inside the comfort zone is great.<br>But can it starts to become poison?"
+    },
+    {
+        "ID": 0.7,
+        "Type": "ending",
+        "Text": "Running away from what seems to be dangerous is a good choice.<br>If that thing is dangerous."
+    },
+    {
+        "ID": 0.8,
+        "Type": "ending",
+        "Text": "Violence is a baked-in method to solve a problem.<br>Sometimes it's the right choice.<br>Sometimes it's not."
+    },
+    {
+        "ID": 0.9,
+        "Type": "ending",
+        "Text": "Sometimes, things are different from what we expect.<br>It might not feel like the correct thing to do, but hey, when has the correct thing to do ever directly told you that.<br><br>After a long fight, it might not feel like you've won, but you did.<br>The first step to winning a fight is to win yourself first."
+    }
+]

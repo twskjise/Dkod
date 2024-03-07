@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap');
+
+
+body, button
+{
+    background-color: black;
+    font-family: 'Source Code Pro', monospace;
+    margin: 0;
+    /*scrollbar-color: transparent transparent;*/
+    overflow: visible;
+}
+
+button
+{
+    font-size: 100%;
+}
+
+.container
+{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+h1, h3
+{
+    color: #ffffff;
+    text-align: center;
+    opacity: 0;
+}
+
+
+h1
+{
+    font-size: 4em;
+}
+
+
+h3
+{
+    font-size: 1.5em;
+    margin-right: 3em;
+    margin-left: 3em;
+}
+
+
+.thankyou
+{
+    margin-right: 2em;
+    color: #ffbaff;
+}
+
+
+input
+{
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+ul
+{
+    padding: 0;
+}
+
+
+li
+{
+    display: inline-flex;
+    margin: 0;
+    padding-left: 0;
+}
+
+
+.message-area
+{
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+
+.entry
+{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 0 0 10px 0;
+}
+
+.entry p
+{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+
+.name
+{
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.them
+{
+    color: #8ad0ff;
+}
+
+
+.us
+{
+    color: #d6e7ff;
+}
+
+
+.system
+{
+    color: #ff3a3a;
+}
+
+
+.input-area
+{
+    align-items: flex-end;
+    border: none;
+    border-top: 1px solid rgba(204, 204, 204, 0.5);
+    height: 30vh;
+    margin: 0;
+    overflow-y: auto;
+    padding: 10px;
+    resize: none;
+}
+
+
+.option
+{
+    background: rgba(0, 0, 0, 0);
+    border: 0;
+    color: #ffffff;
+    display: flex;
+    height: 30%;
+    opacity: 0.7;
+    padding: 0;
+    width: 100%;
+}
+
+
+.thought
+{
+    background: rgba(0, 0, 0, 0);
+    border: 0;
+    color: #ffffff;
+    display: flex;
+    height: 30%;
+    opacity: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+.bigger
+{
+    font-size: 2em;
+    font-weight: 900;
+}
+
+
+.thought:hover
+{
+    opacity: 0.3;
+}
+
+
+.option:hover
+{
+    border: 0;
+    opacity: 1;
+}
+
+
+::-webkit-scrollbar
+{
+    width: 0;
+}
+
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.fade-in {
+    animation: fadein 4s linear forwards;
+}
+
+
+.transitionator {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+}
+
+
+@keyframes shake1
+{
+    0% { transform: translate(1px, 1px);}
+    5% { transform: translate(-1px, -2px);}
+    10% { transform: translate(-3px, 0px); }
+    15% { transform: translate(3px, 2px); }
+    20% { transform: translate(1px, -1px); }
+    25% { transform: translate(-1px, 2px); }
+    30% { transform: translate(-3px, 1px); }
+    35% { transform: translate(3px, 1px); }
+    40% { transform: translate(-1px, -1px); }
+    45% { transform: translate(1px, 2px); }
+    50% { transform: translate(1px, -2px); }
+    55% { transform: translate(1px, 1px); }
+    60% { transform: translate(-1px, -2px); }
+    65% { transform: translate(-3px, 0px); }
+    70% { transform: translate(3px, 2px); }
+    75% { transform: translate(1px, -1px); }
+    80% { transform: translate(-1px, 2px); }
+    85% { transform: translate(-3px, 1px); }
+    90% { transform: translate(3px, 1px); }
+    95% { transform: translate(-1px, -1px); }
+    100% { transform: translate(1px, 2px) ; }
+}
+
+@keyframes shake2
+{
+    0% { transform: translate(2px, 2px);}
+    5% { transform: translate(-2px, -3px);}
+    10% { transform: translate(-6px, 1px); }
+    15% { transform: translate(4px, 4px); }
+    20% { transform: translate(0px, -1px); }
+    25% { transform: translate(-3px, 5px); }
+    30% { transform: translate(-5px, 3px); }
+    35% { transform: translate(0px, 6px); }
+    40% { transform: translate(-1px, -1px); }
+    45% { transform: translate(3px, 4px); }
+    50% { transform: translate(-2px, -2px); }
+    55% { transform: translate(1px, 1px); }
+    60% { transform: translate(-3px, 5px); }
+    65% { transform: translate(3px, 0px); }
+    70% { transform: translate(7px, 6px); }
+    75% { transform: translate(0px, -1px); }
+    80% { transform: translate(-4px, 4px); }
+    85% { transform: translate(5px, 1px); }
+    90% { transform: translate(-5px, -4px); }
+    95% { transform: translate(4px, -2px); }
+    100% { transform: translate(3px, 3px) ; }
+}
+
+
+.screenshake1
+{
+    animation: shake1 0.5s linear 0s;
+}
+
+.screenshake2
+{
+    animation: shake2 0.5s linear 0s;
+}
+
+
+#notes
+{
+    border: 2px solid white;
+    border-radius: 10px;
+    color: #ffbaff;
+    display: flex;
+    font-size: 1.2em;
+    justify-content: center;
+    margin: 0 auto;
+    opacity: 0;
+    text-align: center;
+    width: 10em;
+}
+
+
+#notes:hover
+{
+    background-color: rgb(119, 119, 119);
+}
+
+
+a:link
+{
+    color: white;
+}
+
+
+a:visited
+{
+    color: rgb(255, 208, 121);
+}
